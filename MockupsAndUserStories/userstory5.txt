@@ -1,0 +1,1 @@
+As a student, I want to visit the lecture notes page with the  lecture notes in PDF format so that I can study offline.

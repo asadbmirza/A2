@@ -1,0 +1,1 @@
+As a student, I want to view the course team’s information so that I know who to contact for help.

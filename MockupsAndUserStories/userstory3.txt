@@ -1,0 +1,1 @@
+As a student, I want to access the assignments page so that I can view deadlines, instructions, and submission details.

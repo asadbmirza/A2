@@ -1,0 +1,1 @@
+As a student I want to visit the home page so that I can get an overview of the course and access important links.

@@ -1,0 +1,1 @@
+As a student, I want to access Piazza directly from the website so that I can participate in course discussions and ask questions.

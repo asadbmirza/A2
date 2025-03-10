@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+
+body {
+    margin: 0;
+    
+}
+
+.content {
+    padding: 40px 10%;
+    font-family: Marmelad, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

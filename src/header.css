@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+}
+
+.topnav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #64A6CF;
+    padding: 10px;
+    position: sticky;
+    gap: 30px;
+}
+  
+.topnav h2{
+margin: 0;
+color: white;
+font-family: Oxanium;
+font-size: 35px;
+font-style: normal;
+font-weight: 400;
+}
+
+.nav-links{
+display: flex;
+align-items: center;
+}
+
+.nav-links a{
+color: white;
+text-decoration: none;
+padding: 10px;
+margin: 5px;
+font-size: 20px;
+}
+
+.nav-links a:hover{
+background-color: #4690b3;
+border-radius: 5px;
+}
+
+.nav-links a.active{
+background-color: #4d6c8d;
+border-radius: 5px;
+}
+
+.darkmode-toggle{
+    width: 85px;
+    height: 45px;
+    position: relative;
+    display: block;
+    background-color: #3F3F3F;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.darkmode-toggle::after{
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #C3D5DB;
+    border-radius: 20px;
+    top: 5px;
+    left: 5px;
+}
+
+#darkmode-toggle{
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+#darkmode-toggle:checked +.darkmode-toggle{
+    background-color: #EDEDED;
+}
+
+#darkmode-toggle:checked + label.darkmode-toggle::after{
+    left: 80px;
+    transform: translateX(-100%);
+    background-color: #4B565A;
+}
+
+.darkmode-toggle img{
+    position: absolute;
+    width: 25px;
+    top: 10px;
+    z-index: 100;
+}
+
+.darkmode-toggle img.sun{
+    left: 10px;
+    transition: 0.3s;
+}
+
+.darkmode-toggle img.moon{
+    left: 48px;
+    transition: 0.3s;
+}
+
+.topnav:has(> #darkmode-toggle:checked) {
+    background-color: #04446B;
+}
+
+body:has(.topnav > #darkmode-toggle:checked) {
+    background-color: #2C2C2C;
+}
+
+.hamburger{
+display: none;
+font-size: 24px;
+color: white;
+margin-right: 0;
+cursor: pointer;
+}
+
+.nav-toggle{
+display: none;
+}
+
+@media (max-width: 768px){
+    .topnav h2{
+        font-size: 25px;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        background-color: #64A6CF;
+        padding-bottom: 10px;
+    }
+
+    .nav-links a{
+        margin: 5px 0;
+    }
+
+    .nav-toggle:checked ~ .nav-links{
+        display: flex;
+    }
+}

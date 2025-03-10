@@ -1,0 +1,1 @@
+As a student, I want to switch to dark mode so that I can reduce eye strain while studying at night.

@@ -1,0 +1,1 @@
+As a student, I want to view the syllabus so that I can understand the course schedule, grading scheme, and policies.

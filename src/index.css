@@ -10,9 +10,14 @@ body {
     align-items: center;
 }
 
+.container a{
+    text-decoration: underline;
+    color: black;
+}
+
 .announcements{
     margin-right: 30px;
-    margin-top: 20px;
+    margin: 20px;
     height: 55vh;
     border: solid 3px black;
     border-radius: 10px;
@@ -42,8 +47,12 @@ body {
     font-size: 41px;
 }
 
-.header p:nth-child(2){
-    font-size: 24px;
+.header p:first-child ~ p{
+    font-size: 20px;
+}
+
+.header p span{
+    font-weight: bold;
 }
 
 .contact{
@@ -97,7 +106,7 @@ body {
 
 .deadlines{
     margin-right: 30px;
-    margin-top: 20px;
+    margin: 20px;
     height: 55vh;
     border: solid 3px black;
     border-radius: 10px;
@@ -118,10 +127,25 @@ body {
     color: white;
 }
 
+.topnav:has(> #darkmode-toggle:checked) + .container a{
+    color: white;
+}
+
 .topnav:has(> #darkmode-toggle:checked) + .container .announcements{
     border-color: white;
 }
 
+.topnav:has(> #darkmode-toggle:checked) + .container .contact{
+    border-color: white;
+}
+
+.topnav:has(> #darkmode-toggle:checked) + .container .deadlines{
+    border-color: white;
+}
+
+.topnav:has(> #darkmode-toggle:checked) + .container .contact img{
+    border-color: white;
+}
 @media (max-width: 768px){
 
     .container{

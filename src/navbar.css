@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
-body{
-    margin: 0;
-}
 
 .topnav{
     display: flex;
@@ -11,6 +8,9 @@ body{
     padding: 10px;
     position: sticky;
     gap: 30px;
+    max-width: 100%;
+    top: 0;
+    z-index: 1000;
 }
   
 .topnav h2{

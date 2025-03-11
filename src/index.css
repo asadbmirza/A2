@@ -1,11 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Manuale:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
-
 body {
     margin: 0;
-    
 }
 
-.content {
-    padding: 40px 10%;
-    font-family: Marmelad, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.announcements{
+    float: right;
+    margin-right: 30px;
+    margin-top: 20px;
+    min-width: 300px;
+    max-width: 45%;
+    height: 55vh;
+    border: solid 3px black;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: auto;
+    text-align: center;
+    font-family: Marmelad;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.announcements h2{
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+.header{
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    min-width: 300px;
+    max-width: 45%;
+    overflow: auto;
+    text-align: center;
+    font-family: Manuale;
+    font-weight: 400;
+}
+
+.header p:first-child{
+    font-size: 41px;
+}
+
+.header p:nth-child(2){
+    font-size: 24px;
+}
+
+.topnav:has(> #darkmode-toggle:checked) + .container{
+    color: white;
+}
+
+.topnav:has(> #darkmode-toggle:checked) + .container .announcements{
+    border-color: white;
+}
+
+@media (max-width: 768px){
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .announcements{
+        float: none;
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 100%;
+        font-size: 20px;
+    }
+    .header{
+        float: none;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        font-size: 20px;
+    }
 }

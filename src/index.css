@@ -5,16 +5,14 @@ body {
 }
 
 .container{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .announcements{
-    float: right;
     margin-right: 30px;
     margin-top: 20px;
-    min-width: 300px;
-    max-width: 45%;
     height: 55vh;
     border: solid 3px black;
     border-radius: 10px;
@@ -32,11 +30,8 @@ body {
 }
 
 .header{
-    float: left;
     margin-left: 30px;
-    margin-top: 20px;
-    min-width: 300px;
-    max-width: 45%;
+    max-width: 90%;
     overflow: auto;
     text-align: center;
     font-family: Manuale;
@@ -51,6 +46,74 @@ body {
     font-size: 24px;
 }
 
+.contact{
+    align-items: center;
+    margin: 20px;
+    border: solid 3px black;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: auto;
+    text-align: center;
+    font-family: Marmelad;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.contact h2{
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.contact-info{
+    font-size: 25px;
+}
+
+.email{
+    text-decoration: underline;
+}
+.purva{
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+}
+
+.purva img{
+    float: right;
+    border: solid 3px black;
+    border-radius: 10px;
+}
+
+.purva p span{
+    font-weight: bold;
+}
+
+.deadlines{
+    margin-right: 30px;
+    margin-top: 20px;
+    height: 55vh;
+    border: solid 3px black;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: auto;
+    text-align: center;
+    font-family: Marmelad;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.deadlines h2{
+    font-size: 36px;
+    text-decoration: underline;
+}
+
 .topnav:has(> #darkmode-toggle:checked) + .container{
     color: white;
 }
@@ -62,6 +125,7 @@ body {
 @media (max-width: 768px){
 
     .container{
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -69,7 +133,7 @@ body {
         float: none;
         margin-right: 0px;
         margin-left: 0px;
-        width: 100%;
+        width: 80%;
         font-size: 20px;
     }
     .header{
@@ -78,5 +142,27 @@ body {
         margin-right: 0px;
         width: 100%;
         font-size: 20px;
+    }
+
+    .contact{
+        float: none;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .contact-container{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1300px){
+    .contact-container{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 }

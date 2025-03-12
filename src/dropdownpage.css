@@ -64,6 +64,10 @@ h3 {
     margin: 15px;
 }
 
+.dropDownBody:hover {
+    background-color: #808080;
+}
+
 .dropDownBox > div {
     padding: 10px;
 }
@@ -97,4 +101,15 @@ h3 {
     transform: rotate(90deg);
 }
 
-
+.topnav:has(> #darkmode-toggle:checked) + .content .dropDownBody {
+    color: white;
+    fill: white;
+}
+.topnav:has(> #darkmode-toggle:checked) + .content a {
+    color: white;
+    fill: white;
+}
+.topnav:has(> #darkmode-toggle:checked) + .content .dropDownHeader {
+    color: white;
+    background-color: black;
+}

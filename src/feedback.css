@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
 
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
     height: 100vh;
+}
+label {
+    margin-bottom: 16px;
 }
 
 .container{
@@ -26,7 +29,7 @@ body {
     padding: 10px;
     color: #000;
     text-align: center;
-    font-family: Merriweather;
+    font-family: Marmelad, Arial, Helvetica, sans-serif;
     font-size: 32px;
     font-weight: 400;
 }
@@ -42,7 +45,7 @@ body {
     padding: 15px;
     margin-top: 10px;
     margin-left: 10px;
-    font-family: Merriweather;
+    font-family: Marmelad, Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -117,12 +120,6 @@ body {
     }
     .form-content{
         width: 300px;
-    }
-    .form-content .question{
-        font-size: 15px;
-    }
-    .form-content span{
-        font-size: 15px;
     }
     .form-content button{
         width: 100px;

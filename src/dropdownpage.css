@@ -64,10 +64,6 @@ h3 {
     margin: 15px;
 }
 
-.dropDownBody:hover {
-    background-color: #808080;
-}
-
 .dropDownBox > div {
     padding: 10px;
 }
@@ -75,18 +71,28 @@ h3 {
 .dropDownHeader svg {
     fill : #808080;
     stroke: black;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.15s ease-in-out;
 }
 
 
 .dropDownHeader {
     background-color: #E8E8E8;
-    
+    cursor:pointer;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.dropDownBody:hover {
+    background-color: #808080;
+}
+
+.dropDownHeader:hover {
+    background-color: #64A6CF;
 }
 
 .dropDownBody {
     border-top: 3px solid black;
     display: none;
+    transition: background-color 0.15s ease-in-out;
 }
 
 .press {
@@ -112,4 +118,9 @@ h3 {
 .topnav:has(> #darkmode-toggle:checked) + .content .dropDownHeader {
     color: white;
     background-color: black;
+}
+ 
+.topnav:has(> #darkmode-toggle:checked) + .content .dropDownHeader:hover {
+    color: white;
+    background-color: #04446B;
 }

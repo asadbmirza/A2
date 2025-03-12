@@ -63,7 +63,7 @@ body {
     font-size: 20px;
 }
 
-.header p span{
+span{
     font-weight: bold;
 }
 
@@ -112,10 +112,6 @@ body {
     border-radius: 10px;
 }
 
-.purva p span{
-    font-weight: bold;
-}
-
 .deadlines{
     margin-right: 30px;
     margin: 20px;
@@ -135,12 +131,20 @@ body {
     text-decoration: underline;
 }
 
+.container a:hover{
+    color: #416b85;
+}
+
 .topnav:has(> #darkmode-toggle:checked) + .container{
     color: white;
 }
 
 .topnav:has(> #darkmode-toggle:checked) + .container a{
     color: white;
+}
+
+.topnav:has(> #darkmode-toggle:checked) + .container a:hover{
+    color: #416b85;
 }
 
 .topnav:has(> #darkmode-toggle:checked) + .container .announcements{

@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    flex: 1;
 }
 
 .container a{
@@ -20,6 +24,7 @@ body {
     font-family: Marmelad, Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
+    flex: 1;
 }
 
 .announcements{
@@ -153,6 +158,26 @@ body {
 .topnav:has(> #darkmode-toggle:checked) + .container .contact img{
     border-color: white;
 }
+
+footer {
+    width: 100%;
+    background-color: #335468;
+    display: flex;
+    justify-content: center;
+}
+.footerContent {
+    font-family: Marmelad, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+.footerContent a {
+    color: gold
+}
+
+.topnav:has(> #darkmode-toggle:checked) ~ footer {
+    background-color: #0b2635;
+}
+
 @media (max-width: 768px){
 
     .container{

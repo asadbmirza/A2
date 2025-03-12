@@ -85,6 +85,25 @@ span{
     color: white;
 }
 
+footer {
+    width: 100%;
+    background-color: #335468;
+    display: flex;
+    justify-content: center;
+}
+.footerContent {
+    font-family: Marmelad, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+.footerContent a {
+    color: gold
+}
+
+.topnav:has(> #darkmode-toggle:checked) ~ footer {
+    background-color: #0b2635;
+}
+
 @media (max-width: 768px){
     .content{
         padding: 15px;

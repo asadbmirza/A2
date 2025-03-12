@@ -15,6 +15,13 @@ body {
     color: black;
 }
 
+.content {
+    padding: 40px 10%;
+    font-family: Marmelad, Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
 .announcements{
     margin-right: 30px;
     margin: 20px;

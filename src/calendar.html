@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+    <nav class="topnav">
+        <h2>CSCB20</h2>
+        
+        <label for="nav-toggle" class="hamburger">☰</label>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="syllabus.html">Syllabus</a>
+          <a href="assignments.html">Assignments</a>
+          <a href="labs.html">Labs</a>
+          <a href="notes.html">Lecture Notes</a>
+          <a href="https://piazza.com/class/m5fmz9kzjo83yk">Piazza</a>
+          <a href="https://markus2.utsc.utoronto.ca/">Markus</a>
+          <a href="calendar.html"  class="active">Calendar</a>
+          <a href="feedback.html">Feedback</a>
+          <a href="news.html">News</a>
+          <a href="team.html">Course Team</a>
+          <a href="resources.html">Resources</a>
+        </div>
+        
+        
+        <input type="checkbox" id="darkmode-toggle">
+        <label for="darkmode-toggle" class="darkmode-toggle">
+            <img src="public/sun.png" alt="sun" class="sun">
+            <img src="public/moon.png" alt="moon" class="moon">
+        </label>
+    </nav>
+    <div class="content">
+        <iframe src="https://calendar.google.com/calendar/embed?src=13d631925f3a716373d378a38d107d7a6b19c372ad7203003f0254e13043df2f%40group.calendar.google.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+</body>
+</html>
